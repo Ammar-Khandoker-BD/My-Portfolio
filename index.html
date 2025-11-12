@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mr. Ammar — Aurora Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0; font-family: 'Poppins', sans-serif;
+      color: #f8fafc; background: #050b16; overflow-x: hidden; position: relative;
+    }
+    body::before {
+      content: ''; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+      background: radial-gradient(circle at 30% 30%, rgba(0,255,255,0.15), transparent 70%),
+                  radial-gradient(circle at 70% 70%, rgba(150,0,255,0.15), transparent 70%);
+      animation: aurora 14s ease-in-out infinite alternate;
+    }
+    @keyframes aurora {
+      0% { transform: translate(0, 0) scale(1); opacity: .8; }
+      50% { transform: translate(-10%, 10%) scale(1.05); opacity: 1; }
+      100% { transform: translate(10%, -10%) scale(1); opacity: .9; }
+    }
+    .container { max-width: 1100px; margin: auto; padding: 30px; position: relative; z-index: 1; }
+    header { text-align: center; margin-bottom: 40px; }
+    header img { width: 140px; height: 140px; border-radius: 50%; object-fit: cover; box-shadow: 0 0 25px rgba(0,224,255,0.4); }
+    h1 { font-size: 34px; margin: 16px 0 6px; background: linear-gradient(90deg,#00e0ff,#8b5cf6); -webkit-background-clip: text; color: transparent; }
+    p.lead { color: #94a3b8; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(300px,1fr)); gap: 20px; }
+    .card { background: rgba(16,24,41,0.75); backdrop-filter: blur(10px); padding: 24px; border-radius: 14px; box-shadow: 0 6px 24px rgba(0,0,0,0.5); transition: all .3s; }
+    .card:hover { transform: translateY(-6px); box-shadow: 0 0 25px rgba(0,224,255,0.2); }
+    h2 { color: #00e0ff; font-size: 22px; margin-bottom: 12px; }
+    ul { list-style: none; padding: 0; }
+    li { margin-bottom: 8px; color: #94a3b8; }
+    .skills span { background: rgba(255,255,255,0.05); padding: 6px 12px; border-radius: 10px; font-size: 13px; margin: 4px; display: inline-block; }
+    .gallery { display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; margin-top: 20px; }
+    .gallery img { width: 220px; height: 260px; border-radius: 14px; object-fit: cover; transition: all .3s; box-shadow: 0 0 14px rgba(0,224,255,0.2); }
+    .gallery img:hover { transform: scale(1.05); box-shadow: 0 0 22px rgba(0,224,255,0.4); }
+    .socials { display: flex; justify-content: center; gap: 18px; margin-top: 12px; }
+    .socials a img { width: 28px; height: 28px; transition: transform .3s; }
+    .socials a:hover img { transform: scale(1.2); }
+    a.btn { background: #00e0ff; color: #04101a; font-weight: 700; text-decoration: none; padding: 10px 18px; border-radius: 10px; display: inline-block; margin-top: 10px; }
+    footer { text-align: center; color: #94a3b8; font-size: 14px; margin-top: 40px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="passport.png" alt="Mr. Ammar" />
+      <h1>Md. Ammar Ali Khandoker</h1>
+      <p class="lead">Executive | Digital Marketing Specialist | HRIS & Data Operations Expert</p>
+      <a href="https://www.linkedin.com/in/mdamberalikhandoker" target="_blank" class="btn">LinkedIn Profile</a>
+      <div class="socials">
+        <a href="https://www.facebook.com/ammar.khandoker/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook"></a>
+        <a href="https://github.com/Ammar-Khandoker-BD" target="_blank"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub"></a>
+      </div>
+    </header>
+
+    <section class="card">
+      <h2>About Me</h2>
+      <p>Hello! I’m Mr. Ammar — a final-year BSS (HRM) student at National University, Bangladesh. I combine experience in HRIS, ERP, data entry, and digital marketing with strong design skills in Canva and prompt engineering. My goal is to bridge creativity and data-driven work for impactful results.</p>
+    </section>
+
+    <div class="grid">
+      <div class="card">
+        <h2>Experience</h2>
+        <ul>
+          <li><strong>Executive — Step Media Ltd</strong> (Jan 2025 – Present)</li>
+          <li><strong>Digital Marketing Specialist — Sproutgigs</strong> (Jan 2021 – Present)</li>
+          <li><strong>Junior Executive — PRAN-RFL</strong> (Sep 2023 – Nov 2024)</li>
+          <li><strong>Data Entry Operator — Chorka Textile</strong> (Aug 2022 – Jul 2023)</li>
+          <li><strong>Computer Operator — Mahdeen Group</strong> (Apr 2021 – Jun 2022)</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2>Education</h2>
+        <ul><li><strong>BSS in HRM</strong> — National University (Expected Dec 2025)</li></ul>
+        <h2 style="margin-top:16px">Skills</h2>
+        <div class="skills">
+          <span>HRIS</span><span>ERP</span><span>Data Ops</span><span>MS Excel</span><span>Digital Marketing</span><span>Canva</span><span>Prompt Engineering</span><span>LinkedIn Optimization</span>
+        </div>
+      </div>
+    </div>
+
+    <section class="card">
+      <h2>Photo Gallery</h2>
+      <div class="gallery">
+        <img src="passport.png" alt="Mr. Ammar portrait" />
+        <img src="1757940959774.jpg" alt="Mr. Ammar professional photo" />
+        <img src="image_1737371115981-removebg-preview.png" alt="Mr. Ammar casual look" />
+        <img src="Passport Size.jpg" alt="Mr. Ammar formal photo" />
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Contact</h2>
+      <ul>
+        <li><strong>Phone:</strong> +8801716861353</li>
+        <li><strong>Email:</strong> your.email@example.com</li>
+        <li><strong>Facebook:</strong> <a href="https://www.facebook.com/ammar.khandoker/" target="_blank">facebook.com/ammar.khandoker</a></li>
+        <li><strong>GitHub:</strong> <a href="https://github.com/Ammar-Khandoker-BD" target="_blank">github.com/Ammar-Khandoker-BD</a></li>
+        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/mdamberalikhandoker" target="_blank">/in/mdamberalikhandoker</a></li>
+      </ul>
+    </section>
+
+    <footer>© 2025 Mr. Ammar — Aurora Edition Portfolio</footer>
+  </div>
+</body>
+</html>
